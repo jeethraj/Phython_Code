@@ -1,0 +1,24 @@
+Crete python env in linux server
+
+mkdir JEETH_REPORTS
+python3 -m venv daily_reports-- To create environment
+source daily_reports/bin/activate    -- To Activate
+
+
+
+Now open unix in Visulastudio and open folder 
+
+pip install upgrade pip or pip install --upgrade pip
+pip3 freeze >requirements.txt  -- to take the libraries from other project
+pip3 install -r requirements.txt -- to install all the libraries 
+
+
+-- TO run Python file
+
+#!/bin/bash
+cd /home/cbsapp/
+. .bash_profile
+
+cd /home/cbsapp/ZAIN_OPERATIONS/JEETH_REPORTS
+source PY_ENV_DAILY_RPTS/bin/activate
+python3 daily_report.py
